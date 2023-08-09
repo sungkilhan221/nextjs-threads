@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import { dark } from "@clerk/themes";
 
-function Topbar() {
+function TopBar() {
   return (
     <nav className="topbar">
       <Link href="/" className="flex items-center gap-4">
@@ -41,4 +41,4 @@ function Topbar() {
   );
 }
 
-export default Topbar;
+export default TopBar;

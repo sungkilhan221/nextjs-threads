@@ -2,17 +2,16 @@ import { ClerkProvider } from "@clerk/nextjs";
 import "../globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-
-import Topbar from "@/components/shared/Topbar";
-import LeftSidebar from "@/components/shared/LeftSidebar";
-import RightSidebar from "@/components/shared/RightSidebar";
-import Bottombar from "@/components/shared/Bottombar";
+import TopBar from "@/components/shared/TopBar";
+import LeftSideBar from "@/components/shared/LeftSideBar";
+import RightSideBar from "@/components/shared/RightSideBar";
+import BottomBar from "@/components/shared/BottomBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Threads",
-  escription: "A Next.js 13 MEta Thread Application",
+  escription: "A Next.js 13 Meta Thread Application",
 };
 
 export default function RootLayout({
@@ -24,17 +23,17 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={inter.className}>
-          <Topbar />
+          <TopBar />
           <main className="flex flex-row">
-            <LeftSidebar />
+            <LeftSideBar />
 
             <section className="main-content">
               <div className="w-full max-w-4xl">{children}</div>
             </section>
 
-            <RightSidebar />
+            <RightSideBar />
           </main>
-          <Bottombar />
+          <BottomBar />
         </body>
       </html>
     </ClerkProvider>

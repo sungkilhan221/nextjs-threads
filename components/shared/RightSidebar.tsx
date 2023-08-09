@@ -1,4 +1,4 @@
-function RightSidebar() {
+function RightSideBar() {
   return (
     <section className="custom-scrollbar rightsidebar">
       <div className="flex flex-1 flex-col justify-start">
@@ -13,4 +13,4 @@ function RightSidebar() {
   );
 }
 
-export default RightSidebar;
+export default RightSideBar;

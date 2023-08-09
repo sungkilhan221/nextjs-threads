@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 
-function LeftSidebar() {
+function LeftSideBar() {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -57,4 +57,4 @@ function LeftSidebar() {
   );
 }
 
-export default LeftSidebar;
+export default LeftSideBar;

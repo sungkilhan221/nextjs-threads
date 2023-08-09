@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 
-function Bottombar() {
+function BottomBar() {
   const router = useRouter();
   const pathname = usePathname();
   return (
@@ -40,4 +40,4 @@ function Bottombar() {
   );
 }
 
-export default Bottombar;
+export default BottomBar;
